@@ -1,2 +1,2 @@
-const a: string = 'Teste ts 222'
+const a: string = 'Teste ts web 2 sei lá'
 console.log(a)
