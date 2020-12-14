@@ -1,34 +1,35 @@
 "use strict";
 //string
-var nome = 'João';
+let nome = 'João';
 console.log(nome);
 //nome = 28 erro
-var idade = 27;
+let idade = 27;
 idade = 27.5;
 console.log(idade);
-var possuiHobbies = false;
+let possuiHobbies = false;
 // possuiHobbies = 1
 console.log(possuiHobbies);
 //tipos explícitos
-var minhaIdade;
+let minhaIdade;
 minhaIdade = 27;
 console.log(typeof minhaIdade);
 // minhaIdade = '27'
 // console.log(typeof minhaIdade)
 //array
-var hobbies = ['Cozinhar', 'Futebol'];
+let hobbies = ['Cozinhar', 'Futebol'];
 console.log(hobbies);
 console.log(typeof hobbies);
 hobbies = [100];
 // hobbies = 100 erro
 console.log(hobbies);
 // tuplas
-var endereco = ['Av principal', 99, ''];
+let endereco = ['Av principal', 99, ''];
 console.log(endereco);
 endereco = ['Rua importanten', 1006, 'bloco A'];
 console.log(endereco);
 //enums
 var Cor;
+//enums
 (function (Cor) {
     Cor[Cor["Cinza"] = 0] = "Cinza";
     Cor[Cor["Verde"] = 100] = "Verde";
@@ -37,12 +38,12 @@ var Cor;
     Cor[Cor["Amarelo"] = 4] = "Amarelo";
     Cor[Cor["Vermelho"] = 100] = "Vermelho";
 })(Cor || (Cor = {}));
-var minhaCor = Cor.Verde;
+let minhaCor = Cor.Verde;
 console.log(minhaCor);
 console.log(Cor.Azul);
 console.log(Cor.Laranja, Cor.Amarelo);
 //any
-var carro = 'BMW';
+let carro = 'BMW';
 console.log(carro);
 carro = { marca: 'BMW', ano: 2019 };
 console.log(carro);
@@ -63,13 +64,13 @@ function multiplicar(numA, numB) {
 // console.log(multiplicar(2, 'Bia'))
 console.log(multiplicar(2.6, 5));
 //tipo função
-var calculo;
+let calculo;
 // calculo = digaOi
 // console.log(calculo())
 calculo = multiplicar;
 console.log(calculo(5, 6));
 //objetos
-var usuario = {
+let usuario = {
     nome: 'Joao',
     idade: 27
 };
@@ -83,9 +84,9 @@ usuario = {
     nome: 'Maria',
     idade: 31
 };
-var funcionarios = {
+let funcionarios = {
     nomes: ['Felipe', 'Alfredo'],
-    baterPonto: function (num) {
+    baterPonto: (num) => {
         if (num <= 8) {
             return 'Ponto normal';
         }
@@ -94,9 +95,9 @@ var funcionarios = {
         }
     }
 };
-var funcionarios2 = {
+let funcionarios2 = {
     nomes: ['Carlos', 'Bia'],
-    baterPonto: function (num) {
+    baterPonto: (num) => {
         if (num <= 8) {
             return 'Ponto normal';
         }
@@ -107,12 +108,12 @@ var funcionarios2 = {
 };
 console.log(funcionarios.baterPonto(10));
 //Union Typs
-var nota = 10;
-console.log("Minha nota \u00E9 " + nota);
+let nota = 10;
+console.log(`Minha nota é ${nota}`);
 nota = '10';
-console.log("Minha nota \u00E9 " + nota);
+console.log(`Minha nota é ${nota}`);
 //Checando tipos
-var valor = false;
+let valor = false;
 if (typeof valor == 'number') {
     console.log('number');
 }
@@ -123,10 +124,10 @@ else {
 function falha(msg) {
     throw new Error(msg);
 }
-var produto = {
+const produto = {
     nome: 'Sabão',
     preco: 5,
-    validarProduto: function () {
+    validarProduto() {
         if (!this.nome || this.nome.trim().length == 0) {
             falha('Precisa de um nome');
         }
@@ -136,28 +137,28 @@ var produto = {
     }
 };
 produto.validarProduto();
-var altura = 12;
+let altura = 12;
 //altura = null
-var alturaOpcional = 12;
+let alturaOpcional = 12;
 alturaOpcional = null;
-var contato1 = {
+const contato1 = {
     nome: 'Fulano',
     tel1: '99934312',
     tel2: null
 };
 console.log(contato1);
-var podeSerNulo = null; //tipo any
+let podeSerNulo = null; //tipo any
 podeSerNulo = 12;
 console.log(podeSerNulo);
 podeSerNulo = 'abc';
 console.log(podeSerNulo);
-var contaBancaria = {
+let contaBancaria = {
     saldo: 3456,
-    depositar: function (valor) {
+    depositar(valor) {
         this.saldo += valor;
     }
 };
-var correntista = {
+let correntista = {
     nome: 'Ana Silva',
     contaBancaria: contaBancaria,
     contatos: ['34567890', '98765432']

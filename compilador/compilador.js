@@ -1,6 +1,6 @@
 "use strict";
-var canal = 'Gaveta';
-var inscritos = 61034;
+let canal = 'Gaveta';
+let inscritos = 61034;
 // canal = inscritos
 console.log("Canal feaf= " + canal);
 // let nome = 'Pedro' //erro pois tem uma variavel nome em tipos.ts
@@ -9,7 +9,17 @@ console.log("Canal feaf= " + canal);
 function soma(a, b) {
     return a + b;
 }
-var qualquerCoisa;
+let qualquerCoisa;
 qualquerCoisa = 12;
 qualquerCoisa = 'abc';
+function saudar(isManha) {
+    let saudacao;
+    if (isManha) {
+        saudacao = 'Bom dia';
+    }
+    else {
+        saudacao = 'Boa vida';
+    }
+    return saudacao;
+}
 //# sourceMappingURL=compilador.js.map
