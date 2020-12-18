@@ -1,1 +1,1 @@
-{"version":3,"file":"geometriaRect.js","sourceRoot":"","sources":["geometriaRect.ts"],"names":[],"mappings":""}
+{"version":3,"file":"geometriaRect.js","sourceRoot":"","sources":["geometriaRect.ts"],"names":[],"mappings":";AAAA,IAAU,SAAS,CAMlB;AAND,WAAU,SAAS;IACf,IAAiB,IAAI,CAIpB;IAJD,WAAiB,IAAI;QACjB,SAAgB,SAAS,CAAC,IAAW,EAAE,MAAa;YAChD,OAAO,IAAI,GAAC,MAAM,CAAA;QACtB,CAAC;QAFe,cAAS,YAExB,CAAA;IACL,CAAC,EAJgB,IAAI,GAAJ,cAAI,KAAJ,cAAI,QAIpB;AACL,CAAC,EANS,SAAS,KAAT,SAAS,QAMlB"}

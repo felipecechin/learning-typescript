@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/felipecechin/learning-typescript#readme",
   "dependencies": {
+    "@types/node": "^14.14.14",
     "live-server": "^1.2.1"
   }
 }

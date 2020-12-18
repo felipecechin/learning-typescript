@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>TypeScript</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.21.6/system.js"></script>
 </head>
 <body>
 <!--    <script src="introducao/basico.js"></script>-->
@@ -11,6 +12,24 @@
 <!--<script src="ecmascript/ecmascript.js"></script>-->
 <!--<script src="classes/classes.js"></script>-->
 <!--<script src="classes/desafio.js"></script>-->
-<script src="namespaces/namespaces.js"></script>
+<!--<script src="namespaces/namespaces.js"></script>-->
+<!--<script src="namespaces/geometriaRect.js"></script>-->
+<!--<script src="namespaces/geometriaCirc.js"></script>-->
+<!--<script src="namespaces/namespaces.js"></script>-->
+<!--<script src="modulos/modulos.js"></script>-->
+<!--<script src="modulos/modulos.js"></script>-->
+<script>
+    SystemJS.config({
+        baseUrl: '/modulos',
+        packages: {
+            '/modulos': {
+                defaultJSExtension: true
+            }
+        }
+    })
+
+    SystemJS.import('./modulos/modulos.js')
+</script>
+<!--<script src="modulos/modulos.js"></script>-->
 </body>
 </html>
