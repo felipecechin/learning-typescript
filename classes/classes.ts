@@ -1,4 +1,4 @@
-class Data {
+export class Data {
     //Público por padrão
     dia: number
     public mes: number
@@ -201,8 +201,9 @@ console.log(Unico.getInstance().agora())
 
 //Somente leitura
 class Aviao {
-    public readonly modelo:string
-    constructor(modelo:string, public readonly prefixo:string) {
+    public readonly modelo: string
+
+    constructor(modelo: string, public readonly prefixo: string) {
         this.modelo = modelo
     }
 }
